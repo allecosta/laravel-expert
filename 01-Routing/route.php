@@ -75,3 +75,35 @@ Route::get('user/{id}/{name}', function ($id, $name) {
 
 })->where(['id' => '[0-9]+', 'name' => '[a-z]+']);
 
+
+
+/**
+ * Named Routes
+ * 
+ */
+
+ // Especificando um nome para a rota
+ // Especificando um nome de rota para ações do controlador.
+Route::get('user/profile', function () {
+
+})->name('profile');
+
+
+Route::get('user/profile', [UserProfileController::class, 'show'])->name('profile');
+
+
+// Gerando URL
+$url = route('profile');
+
+// Redirecionamento
+return redirect()->route('profile');
+
+
+// Rota com parâmentros
+// Gerando URL com chave e valor
+Route::get('/user/{id}/profile', function ($id) {
+
+})->name('profile');
+
+
+$url = route('profile', ['id' => 2]);
