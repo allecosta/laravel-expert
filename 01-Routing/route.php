@@ -10,7 +10,7 @@
 // Rota apontando para o controlador UserController que contém o método index.
 
 Route::get('/', function () {
-    return view('welcome')
+    return view('welcome');
 });
 
 Route::get('/', function () {
