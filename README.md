@@ -11,4 +11,9 @@
   - Basic Controllers
   - Controller Middleware
   - Resource Controllers
+
+- [Views](/03-Views)
+  - Creating Views
+  - Data Views
+  
   
