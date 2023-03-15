@@ -15,5 +15,9 @@
 - [Views](/03-Views)
   - Creating Views
   - Data Views
+
+- [Template](/04-Template)
+  - Blade Template
+  - Template Inheritance
   
   
